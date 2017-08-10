@@ -1,0 +1,16 @@
+.night-mode-bg {
+    background: #333333 !important;
+}
+
+.night-mode-bg * {
+    background: #333333 !important;
+    color: #dddddd !important;
+}
+
+.night-mode-bg :link, .night-mode-bg :link * {
+    color: #c1c1c2 !important
+}
+
+.night-mode-bg :visited, .night-mode-bg :visited * {
+    color: #c1c1c2 !important
+}

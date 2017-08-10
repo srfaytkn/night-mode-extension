@@ -1,0 +1,30 @@
+{
+  "name": "Night Mode",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Night Mode",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "css/night.mode.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "webRequest"
+  ]
+}
