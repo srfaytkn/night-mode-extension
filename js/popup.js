@@ -1,5 +1,4 @@
-chrome.extension.sendRequest(
-  {nightModeStatus: null},
+chrome.extension.sendRequest({nightModeStatus: null},
   function (response) {//popup açılınca switcher için durumu sorgula
     document.getElementById('modeSwitcher').checked = response.nightModeStatus;
   }

@@ -19,12 +19,17 @@
       ],
       "css": [
         "css/night.mode.css"
-      ]
+      ],
+      "js": [
+        "js/content.js"
+      ],
+      "run_at": "document_start"
     }
   ],
   "permissions": [
-    "<all_urls>",
     "tabs",
-    "webRequest"
+    "webRequest",
+    "*://*/*",
+    "<all_urls>"
   ]
 }
